@@ -20,6 +20,11 @@ public class UserController {
     private final UserService userService;
     private final ModelMapper modelMapper;
 
+    /**
+     *
+     * @param userRequested
+     * @return
+     */
     @PostMapping("/user")
     public ResponseEntity<Response> createUser(final @RequestBody UserDto userRequested) {
         System.out.println("triggerd");
